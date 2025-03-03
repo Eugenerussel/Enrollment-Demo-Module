@@ -15,16 +15,16 @@ export class IDCardAgingComponent {
 
   constructor(private sanitizer: DomSanitizer) {
     this.activeTab = '1';
-    this.dashboardUrl = this.sanitizeUrl('https://www.wikipedia.org');
+    this.dashboardUrl = this.sanitizeUrl('https://dev.usthealthproofconnect.com/qliksense/single/?appid=4ee0d04a-525d-403b-9c3b-1f40d4fd5f0a&sheet=4fddf656-2dcd-44e9-9cde-4f4c92a29f16&theme=horizon&opt=ctxmenu,currsel');
   }
 
   setActiveTab(tab: string) {
     this.activeTab = tab; // Update active tab for UI change
 
     if (tab === '1') {
-      this.dashboardUrl = this.sanitizeUrl('https://www.wikipedia.org');
+      this.dashboardUrl = this.sanitizeUrl('https://dev.usthealthproofconnect.com/qliksense/single/?appid=4ee0d04a-525d-403b-9c3b-1f40d4fd5f0a&sheet=4fddf656-2dcd-44e9-9cde-4f4c92a29f16&theme=horizon&opt=ctxmenu,currsel');
     } else if (tab === '2') {
-      this.dashboardUrl = this.sanitizeUrl('https://angular.io');
+      this.dashboardUrl = this.sanitizeUrl('https://dev.usthealthproofconnect.com/qliksense/single/?appid=4ee0d04a-525d-403b-9c3b-1f40d4fd5f0a&sheet=f0c7df8b-6e81-4d98-95bc-836456d73f47&theme=horizon&opt=ctxmenu,currsel&select=$::%3DYear(clm_processed_date),2024');
     }
   }
 
